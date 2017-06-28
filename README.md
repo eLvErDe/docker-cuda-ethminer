@@ -65,7 +65,7 @@ docker push docker.domain.com/mining/cuda-ethminer
 
 ## Use it with Mesos/Marathon
 
-Edit `mesos_marathon.json` to replace ethpool by something else, set your Ethereum mining key and change application path as well as docker image address.
+Edit `mesos_marathon.json` to replace ethermine.org by something else (not necessary), set your Ethereum mining key and change application path as well as docker image address.
 Then simply run (adapt application name here too):
 
 ```
