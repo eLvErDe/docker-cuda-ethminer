@@ -1,0 +1,16 @@
+{
+  "id": "/mining/cuda-ethminer",
+  "cmd": "/root/ethminer -U -S eu1.ethermine.org:4444 -FS eu2.ethermine.org:4444 -O <your_0x_eth_id>.rig0",
+  "cpus": 0.1,
+  "gpus": 1,
+  "mem": 64,
+  "disk": 5000,
+  "instances": 1,
+  "container": {
+    "type": "MESOS",
+    "docker": {
+      "image": "docker.domain.com/mining/cuda-ethminer:latest",
+      "forcePullImage": true
+    }
+  }
+}
