@@ -9,7 +9,7 @@
   "container": {
     "type": "MESOS",
     "docker": {
-      "image": "docker.domain.com/mining/cuda-ethminer:latest",
+      "image": "earthlablux/cuda-ethminer:latest",
       "forcePullImage": true
     }
   }
