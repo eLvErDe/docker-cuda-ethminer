@@ -25,3 +25,8 @@ RUN git clone https://github.com/ethereum-mining/ethminer.git /root/src/ \
     && cmake --build /root/build/ \
     && mv /root/build/ethminer/ethminer /root/ethminer \
     && rm -rf /root/build /root/src/
+
+# nvidia-container-runtime @ https://gitlab.com/nvidia/cuda/blob/ubuntu16.04/8.0/runtime/Dockerfile
+LABEL com.nvidia.volumes.needed="nvidia_driver"
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
