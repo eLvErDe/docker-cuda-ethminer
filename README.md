@@ -11,7 +11,9 @@ It has also been tested successfully on [Mesos] 1.2.1.
 git clone https://github.com/eLvErDe/docker-cuda-ethminer
 cd docker-cuda-ethminer
 docker build -t cuda-ethminer .
+docker build -t cuda-ethminer-cuda9 . -f Dockerfile.cuda9
 ```
+CUDA 9 variants will requires nvidia drivers >= 384 on the host.
 
 ## Test it locally (benchmark mode)
 
