@@ -8,7 +8,7 @@ It has also been tested successfully on [Mesos] 1.2.1.
 ## Build images
 
 ```
-git clone https://github.com/EarthLab-Luxembourg/docker-cuda-ethminer
+git clone https://github.com/eLvErDe/docker-cuda-ethminer
 cd docker-cuda-ethminer
 docker build -t cuda-ethminer .
 ```
