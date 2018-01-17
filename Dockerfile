@@ -43,6 +43,7 @@ RUN git clone https://github.com/ethereum-mining/ethminer.git /root/src/ \
     && cmake -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON /root/src/ \
     && cmake --build /root/build/ \
     && mv /root/build/ethminer/ethminer /root/ethminer \
+    && chmod 0755 /root/ && chmod 0755 /root/ethminer \
     && rm -rf /root/build /root/src/
 
 # nvidia-container-runtime @ https://gitlab.com/nvidia/cuda/blob/ubuntu16.04/8.0/runtime/Dockerfile
